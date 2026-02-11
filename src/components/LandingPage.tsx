@@ -47,7 +47,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             />
           </div>
 
-          <h1 className="font-bold text-sm text-neutral-900 mb-1 tracking-tight w-full text-center whitespace-nowrap">
+          <h1 className="font-bold text-lg text-neutral-900 mb-1 tracking-tight w-full text-center">
             @madmonkey{cleanHandle}
           </h1>
 
@@ -59,8 +59,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             <a href={`https://instagram.com/madmonkey${property.handle}`} target="_blank" rel="noopener noreferrer" className="p-4 bg-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] hover:scale-110 transition-all rounded-full" aria-label="Instagram">
               <svg className="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.312.06-2.208.267-2.993.573-.81.314-1.498.736-2.183 1.421-.686.685-1.107 1.373-1.421 2.183-.306.785-.513 1.681-.573 2.993-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.06 1.312.267 2.208.573 2.993.314.81.736 1.498 1.421 2.183.685.686 1.373 1.107 2.183 1.421.785.306 1.681.513 2.993.573 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.312-.06 2.208-.267 2.993-.573.81-.314 1.498-.736 2.183-1.421.686-.685 1.107-1.373 1.421-2.183.306-.785.513-1.681.573-2.993.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.06-1.312-.267-2.208-.573-2.993-.314-.81-.736-1.498-1.421-2.183-.685-.686-1.373-1.107-2.183-1.421-.785-.306-1.681-.513-2.993-.573-1.28-.058-1.688-.072-4.947-.072zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
-            <a href={`https://tiktok.com/@madmonkey${property.handle}`} target="_blank" rel="noopener noreferrer" className="p-4 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:scale-110 transition-all rounded-full" aria-label="TikTok">
-              <svg className="w-6 h-6 fill-black" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.032 2.612-.019 3.91-.01 0 1.161.127 2.305.457 3.41 1.053.045 2.112.28 3.125.617v4.06c-1.076-.23-2.184-.337-3.284-.316-.017 1.32-.01 2.64-.01 3.96 0 2.264.12 4.55-.49 6.74-.636 2.503-2.316 4.7-4.63 5.86-3.08 1.63-7.144 1.265-9.84-1.012-2.82-2.36-3.665-6.66-1.92-9.98 1.576-2.924 5.09-4.81 8.39-4.14v4.11c-1.365-.436-2.99-.21-4.14.65-1.505 1.09-2.006 3.25-1.12 4.965.75 1.455 2.35 2.32 3.945 2.224 1.833-.105 3.32-1.63 3.37-3.46v-14.8zm0 0"/></svg>
+            <a href={`https://tiktok.com/@madmonkey${property.handle}`} target="_blank" rel="noopener noreferrer" className="p-4 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:scale-110 transition-all rounded-full flex items-center justify-center" aria-label="TikTok">
+              <svg className="w-6 h-6 fill-black flex-shrink-0" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 01-122.8-39.3v178.8A162.6 162.6 0 11185 188.3v89.9a74.6 74.6 0 1052.2 71.2V0h88a121 121 0 00122.8 121.3z"/></svg>
             </a>
           </div>
         </section>
