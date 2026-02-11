@@ -34,14 +34,14 @@ const Index: React.FC = () => {
 
   const handleSelectProperty = (property: Property) => {
     setSelectedProperty(property);
-    navigate(`/${property.id}`);
+    navigate(`/locationmother/${property.id}`);
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   };
 
   const handleBackToSelector = () => {
     if (!isStandalone) {
       setSelectedProperty(null);
-      navigate('/');
+      navigate('/locationmother');
     }
   };
 
