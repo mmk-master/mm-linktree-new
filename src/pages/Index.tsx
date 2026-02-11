@@ -34,18 +34,16 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a]">
       {/* Desktop: side-by-side layout */}
-      <div className="hidden lg:flex min-h-screen items-center justify-center">
-        <div className="w-[430px] min-h-screen overflow-y-auto">
-          {selectedProperty ? (
-            <LandingPage
-              property={selectedProperty}
-              onBack={handleBackToSelector}
-              isStandalone={isStandalone}
-            />
-          ) : (
-            <PropertySelector onSelect={handleSelectProperty} />
-          )}
-        </div>
+      <div className="hidden lg:block min-h-screen">
+        {selectedProperty ? (
+          <LandingPage
+            property={selectedProperty}
+            onBack={handleBackToSelector}
+            isStandalone={isStandalone}
+          />
+        ) : (
+          <PropertySelector onSelect={handleSelectProperty} />
+        )}
       </div>
 
       {/* Mobile: full-width */}
