@@ -17,9 +17,9 @@ const PropertySelector: React.FC<PropertySelectorProps> = ({ onSelect }) => {
             onClick={() => onSelect(prop)}
             className="w-full py-6 px-10 bg-white hover:bg-yellow-400 transition-all border-4 border-black text-left flex justify-between items-center group active:scale-95 shadow-[8px_8px_0px_0px_rgba(255,20,147,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
           >
-            <div>
-              <span className="font-display text-4xl tracking-tighter block uppercase leading-none mb-1 text-black transition-colors">{prop.name}</span>
-              <span className="text-[12px] text-black/50 font-black uppercase tracking-[0.2em]">{prop.country}</span>
+            <div className="min-w-0 flex-1 mr-3">
+              <span className="font-display text-2xl sm:text-3xl tracking-tighter block uppercase leading-none mb-1 text-black transition-colors truncate">{prop.name}</span>
+              <span className="text-[11px] text-black/50 font-black uppercase tracking-[0.2em]">{prop.country}</span>
             </div>
             <div className="w-14 h-14 bg-black flex items-center justify-center transform group-hover:rotate-12 transition-transform">
               <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
