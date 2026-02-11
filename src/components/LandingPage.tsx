@@ -75,7 +75,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
           <a href="https://madmonkeyhostels.com/check-in" className="w-full py-5 px-8 bg-yellow-400 border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
             <div className="flex flex-col">
               <span>Skip the Queue</span>
-              <span className="text-xs normal-case tracking-normal opacity-70">Check-in Online</span>
+              <span className="text-base normal-case tracking-normal opacity-70">Check-in Online</span>
             </div>
             <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>
           </a>
