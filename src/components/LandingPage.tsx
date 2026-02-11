@@ -44,7 +44,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
              <img
                src={madMonkeyLogo}
                alt="Mad Monkey Logo"
-               className="w-1/2 h-1/2 object-contain"
+               className="w-2/3 h-2/3 object-contain"
              />
           </div>
 
