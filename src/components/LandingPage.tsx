@@ -1,4 +1,5 @@
 import React from 'react';
+import madMonkeyLogo from '@/assets/mad-monkey-logo.png';
 import { Property } from '@/lib/types';
 import { THEMES } from '@/lib/constants';
 
@@ -40,11 +41,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
           </div>
 
           <div className="w-32 h-32 bg-neutral-100 rounded-full border-4 border-black mb-6 transform hover:scale-105 transition-transform shadow-lg overflow-hidden flex items-center justify-center">
-            <img
-              src={`https://picsum.photos/seed/logo-${property.id}/400`}
-              alt="Mad Monkey Logo"
-              className="w-full h-full object-cover"
-            />
+             <img
+               src={madMonkeyLogo}
+               alt="Mad Monkey Logo"
+               className="w-3/4 h-3/4 object-contain"
+             />
           </div>
 
           <h1 className="font-bold text-lg text-neutral-900 mb-1 tracking-tight w-full text-center">
