@@ -47,7 +47,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             />
           </div>
 
-          <h1 className="font-bold text-2xl text-neutral-900 mb-1 tracking-tight">
+          <h1 className="font-bold text-xl text-neutral-900 mb-1 tracking-tight break-all w-full">
             @madmonkey{cleanHandle}
           </h1>
 
