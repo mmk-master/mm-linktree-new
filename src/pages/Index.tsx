@@ -1,11 +1,48 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React, { useState, useEffect } from 'react';
+import { Property } from '@/lib/types';
+import { PROPERTIES } from '@/lib/constants';
+import PropertySelector from '@/components/PropertySelector';
+import LandingPage from '@/components/LandingPage';
 
-const Index = () => {
+const Index: React.FC = () => {
+  const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
+  const [isStandalone, setIsStandalone] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const hostId = params.get('h');
+    if (hostId) {
+      const found = PROPERTIES.find(p => p.id === hostId);
+      if (found) {
+        setSelectedProperty(found);
+        setIsStandalone(true);
+      }
+    }
+  }, []);
+
+  const handleSelectProperty = (property: Property) => {
+    setSelectedProperty(property);
+    window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+  };
+
+  const handleBackToSelector = () => {
+    if (!isStandalone) {
+      setSelectedProperty(null);
+    }
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background">
+      <div className="max-w-md mx-auto min-h-screen bg-card shadow-2xl overflow-hidden relative">
+        {selectedProperty ? (
+          <LandingPage
+            property={selectedProperty}
+            onBack={handleBackToSelector}
+            isStandalone={isStandalone}
+          />
+        ) : (
+          <PropertySelector onSelect={handleSelectProperty} />
+        )}
       </div>
     </div>
   );
