@@ -40,7 +40,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             MAD VIBES
           </div>
 
-          <div className="w-32 h-32 bg-neutral-100 rounded-full border-4 border-black mb-6 transform hover:scale-105 transition-transform shadow-lg overflow-hidden flex items-center justify-center">
+          <div className="w-32 h-32 rounded-full border-4 border-black mb-6 transform hover:scale-105 transition-transform shadow-lg overflow-hidden flex items-center justify-center">
              <img
                src={madMonkeyLogo}
                alt="Mad Monkey Logo"
