@@ -6,20 +6,19 @@ import PropertySelector from '@/components/PropertySelector';
 import LandingPage from '@/components/LandingPage';
 
 const Index: React.FC = () => {
-  const { locationId } = useParams<{ locationId?: string }>();
+  const { slug } = useParams<{ slug?: string }>();
   const navigate = useNavigate();
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
   const [isStandalone, setIsStandalone] = useState(false);
 
   useEffect(() => {
-    if (locationId) {
-      const found = PROPERTIES.find(p => p.id === locationId);
+    if (slug) {
+      const found = PROPERTIES.find(p => p.slug === slug);
       if (found) {
         setSelectedProperty(found);
         setIsStandalone(true);
       }
     } else {
-      // Also support legacy ?h= param
       const params = new URLSearchParams(window.location.search);
       const hostId = params.get('h');
       if (hostId) {
@@ -30,18 +29,18 @@ const Index: React.FC = () => {
         }
       }
     }
-  }, [locationId]);
+  }, [slug]);
 
   const handleSelectProperty = (property: Property) => {
     setSelectedProperty(property);
-    navigate(`/locationmother/${property.id}`);
+    navigate(`/${property.slug}`);
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   };
 
   const handleBackToSelector = () => {
     if (!isStandalone) {
       setSelectedProperty(null);
-      navigate('/locationmother');
+      navigate('/');
     }
   };
 

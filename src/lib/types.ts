@@ -19,4 +19,5 @@ export interface Property {
   country: string;
   category: PropertyCategory;
   handle: string;
+  slug: string;
 }
