@@ -18,7 +18,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
   return (
     <div
       className="min-h-screen w-full flex flex-col items-center pb-12 relative"
-      style={{ background: `linear-gradient(135deg, ${theme.gradientFrom}, ${theme.gradientTo})` }}
+      style={{ background: `linear-gradient(135deg, ${theme.gradientFrom}dd, ${theme.gradientTo}dd)` }}
     >
       {/* Back button */}
       {!isStandalone && (
