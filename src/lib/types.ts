@@ -20,4 +20,5 @@ export interface Property {
   category: PropertyCategory;
   handle: string;
   slug: string;
+  whatsappUrl?: string;
 }
