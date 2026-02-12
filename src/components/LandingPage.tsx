@@ -37,7 +37,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
         {/* A. THE HEADER */}
         <section className="bg-white border-4 border-black p-8 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] flex flex-col items-center text-center relative">
           <div className="absolute -top-4 -right-4 bg-black text-white px-4 py-1 font-bold text-xl rotate-[12deg] shadow-lg z-20 border-2 border-white pointer-events-none uppercase tracking-tighter">
-            MAD VIBES
+            ALL IN
           </div>
 
           <div className="w-32 h-32 rounded-full border-4 border-black mb-6 transform hover:scale-105 transition-transform shadow-lg overflow-hidden flex items-center justify-center bg-white">
