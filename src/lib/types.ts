@@ -23,4 +23,5 @@ export interface Property {
   whatsappUrl?: string;
   instagramUrl?: string;
   tiktokUrl?: string;
+  checkinUrl?: string;
 }
