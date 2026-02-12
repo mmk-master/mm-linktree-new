@@ -21,17 +21,15 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
       style={{ background: `linear-gradient(135deg, ${theme.gradientFrom}dd, ${theme.gradientTo}dd)` }}
     >
       {/* Back button */}
-      {!isStandalone && (
-        <button
-          onClick={onBack}
-          className="absolute top-4 left-4 p-3 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-full hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all z-40"
-          aria-label="Back to selection"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
-          </svg>
-        </button>
-      )}
+      <a
+        href="/"
+        className="absolute top-4 left-4 p-3 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-full hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all z-40"
+        aria-label="Back to selection"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+        </svg>
+      </a>
 
       <div className="w-full max-w-md px-6 flex flex-col gap-8 mt-20 z-10">
         {/* A. THE HEADER */}
