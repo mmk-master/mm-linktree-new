@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import WifiModal from '@/components/WifiModal';
 import madMonkeyLogo from '@/assets/mad-monkey-logo.png';
 import { Property } from '@/lib/types';
@@ -17,20 +17,9 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
   const utmSuffix = `?utm_source=property_qr&utm_medium=linkinbio&utm_campaign=${utmCampaign}`;
   const cleanHandle = property.name.toLowerCase().replace(/\s+/g, '');
 
-  const isIOS = useMemo(() => {
-    if (typeof navigator === 'undefined') return false;
-    return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  }, []);
-
   const handleWifiClick = () => {
     if (!property.wifi) return;
-    if (isIOS && property.wifi.mobileconfig) {
-      // iOS: download the .mobileconfig profile
-      window.location.href = property.wifi.mobileconfig;
-    } else {
-      // Android / other: show modal with copy + settings
-      setShowWifiModal(true);
-    }
+    setShowWifiModal(true);
   };
   return (
     <div
