@@ -73,7 +73,7 @@ const WifiModal: React.FC<WifiModalProps> = ({ isOpen, onClose, ssid, password }
         {/* Step 1: Copy password */}
         <button
           onClick={handleCopyPassword}
-          className={`w-full py-4 px-6 border-4 border-black flex items-center justify-between font-bold text-lg uppercase tracking-tight shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all ${
+          className={`w-full py-4 px-6 border-4 border-black flex items-center justify-between font-bold text-lg uppercase tracking-tight shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all ${
             copied
               ? 'bg-green-400 text-black'
               : 'bg-yellow-400 text-black'
