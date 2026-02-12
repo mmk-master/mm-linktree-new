@@ -24,9 +24,4 @@ export interface Property {
   instagramUrl?: string;
   tiktokUrl?: string;
   checkinUrl?: string;
-  wifi?: {
-    ssid: string;
-    password: string;
-    mobileconfig?: string; // path to .mobileconfig file for iOS
-  };
 }
