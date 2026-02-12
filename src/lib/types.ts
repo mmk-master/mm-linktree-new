@@ -21,4 +21,6 @@ export interface Property {
   handle: string;
   slug: string;
   whatsappUrl?: string;
+  instagramUrl?: string;
+  tiktokUrl?: string;
 }
