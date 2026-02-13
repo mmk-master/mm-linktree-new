@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import WifiModal from '@/components/WifiModal';
 import madMonkeyLogo from '@/assets/mad-monkey-logo.png';
 import { Property } from '@/lib/types';
 import { THEMES } from '@/lib/constants';
@@ -10,10 +11,16 @@ interface LandingPageProps {
 }
 
 const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalone = false }) => {
+  const [showWifiModal, setShowWifiModal] = useState(false);
   const theme = THEMES[property.category];
   const utmCampaign = property.name.toLowerCase().replace(/\s+/g, '_');
   const utmSuffix = `?utm_source=property_qr&utm_medium=linkinbio&utm_campaign=${utmCampaign}`;
   const cleanHandle = property.name.toLowerCase().replace(/\s+/g, '');
+
+  const handleWifiClick = () => {
+    if (!property.wifi) return;
+    setShowWifiModal(true);
+  };
   return (
     <div
       className="min-h-screen w-full flex flex-col items-center pb-12 relative"
@@ -73,6 +80,17 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
 
         {/* B. THE UTILITY STACK */}
         <section className="flex flex-col gap-4">
+          {property.wifi ? (
+            <button onClick={handleWifiClick} className="w-full py-5 px-8 bg-white border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
+              <span>Connect to WiFi</span>
+              <div className="w-3 h-3 rounded-full bg-green-500 border-2 border-black animate-pulse"></div>
+            </button>
+          ) : (
+            <a href="#" className="w-full py-5 px-8 bg-white border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
+              <span>Connect to WiFi</span>
+              <div className="w-3 h-3 rounded-full bg-green-500 border-2 border-black animate-pulse"></div>
+            </a>
+          )}
           {property.checkinUrl && (
           <a href={property.checkinUrl} target="_blank" rel="noopener noreferrer" className="w-full py-5 px-8 bg-yellow-400 border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
             <div className="flex flex-col">
@@ -144,6 +162,15 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
         </footer>
       </div>
 
+      {/* Wi-Fi Modal for Android */}
+      {property.wifi && (
+        <WifiModal
+          isOpen={showWifiModal}
+          onClose={() => setShowWifiModal(false)}
+          ssid={property.wifi.ssid}
+          password={property.wifi.password}
+        />
+      )}
     </div>
   );
 };
