@@ -121,11 +121,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
           <div className="absolute top-0 right-0 w-24 h-24 bg-white opacity-10 rotate-45 transform translate-x-10 translate-y-[-20px]"></div>
 
           <h2 className="font-bold text-3xl mb-4 tracking-tight leading-none uppercase">
-            20% OFF <span className="text-yellow-400">YOUR STAY</span>
+            10% OFF <span className="text-yellow-400">YOUR STAY</span>
           </h2>
 
           <p className="text-sm text-white/90 mb-8 px-2 leading-relaxed font-medium">
-            Book direct to score the lowest guaranteed prices and a <span className="text-yellow-400 font-bold">20% discount on us</span>. Plus, stay flexible with easy, free cancellation.
+            Book direct to score the lowest guaranteed prices and a <span className="text-yellow-400 font-bold">10% discount on us</span>. Plus, stay flexible with easy, free cancellation.
           </p>
 
           <div className="relative w-full">
