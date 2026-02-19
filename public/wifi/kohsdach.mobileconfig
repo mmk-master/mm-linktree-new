@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutoJoin</key>
+			<true/>
+			<key>EncryptionType</key>
+			<string>WPA2</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>IsHotspot</key>
+			<false/>
+			<key>Password</key>
+			<string>jointhemadness</string>
+			<key>PayloadDescription</key>
+			<string>Configures Wi-Fi settings for Mad Monkey Koh Sdach</string>
+			<key>PayloadDisplayName</key>
+			<string>Mad Monkey Koh Sdach Wi-Fi</string>
+			<key>PayloadIdentifier</key>
+			<string>com.madmonkey.wifi.kohsdach</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>c3d4e5f6-a7b8-9012-cdef-123456789012</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyType</key>
+			<string>None</string>
+			<key>SSID_STR</key>
+			<string>MAD MONKEY KOH SDACH</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Install this profile to connect to Mad Monkey Koh Sdach Wi-Fi automatically.</string>
+	<key>PayloadDisplayName</key>
+	<string>Mad Monkey Koh Sdach Wi-Fi</string>
+	<key>PayloadIdentifier</key>
+	<string>com.madmonkey.wifi.kohsdach.profile</string>
+	<key>PayloadOrganization</key>
+	<string>Mad Monkey Hostels</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>h3g4f5e6-d7c8-9012-fedc-ba2109876543</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

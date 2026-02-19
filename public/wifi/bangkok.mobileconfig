@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutoJoin</key>
+			<true/>
+			<key>EncryptionType</key>
+			<string>WPA2</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>IsHotspot</key>
+			<false/>
+			<key>Password</key>
+			<string>jointhemadness</string>
+			<key>PayloadDescription</key>
+			<string>Configures Wi-Fi settings for Mad Monkey Bangkok</string>
+			<key>PayloadDisplayName</key>
+			<string>Mad Monkey Bangkok Wi-Fi</string>
+			<key>PayloadIdentifier</key>
+			<string>com.madmonkey.wifi.bangkok</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>c1d2e3f4-a5b6-7890-cdef-901234567890</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyType</key>
+			<string>None</string>
+			<key>SSID_STR</key>
+			<string>MAD MONKEY BANGKOK</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Install this profile to connect to Mad Monkey Bangkok Wi-Fi automatically.</string>
+	<key>PayloadDisplayName</key>
+	<string>Mad Monkey Bangkok Wi-Fi</string>
+	<key>PayloadIdentifier</key>
+	<string>com.madmonkey.wifi.bangkok.profile</string>
+	<key>PayloadOrganization</key>
+	<string>Mad Monkey Hostels</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>z1y2x3w4-v5u6-7890-fedc-ba0987654321</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
