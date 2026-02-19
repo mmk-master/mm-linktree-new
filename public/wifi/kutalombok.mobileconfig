@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutoJoin</key>
+			<true/>
+			<key>EncryptionType</key>
+			<string>WPA2</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>IsHotspot</key>
+			<false/>
+			<key>Password</key>
+			<string>jointhemadness</string>
+			<key>PayloadDescription</key>
+			<string>Configures Wi-Fi settings for Mad Monkey Kuta Lombok</string>
+			<key>PayloadDisplayName</key>
+			<string>Mad Monkey Kuta Lombok Wi-Fi</string>
+			<key>PayloadIdentifier</key>
+			<string>com.madmonkey.wifi.kutalombok</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>e5f6a7b8-c9d0-1234-efab-345678901234</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyType</key>
+			<string>None</string>
+			<key>SSID_STR</key>
+			<string>MAD MONKEY KUTA LOMBOK</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Install this profile to connect to Mad Monkey Kuta Lombok Wi-Fi automatically.</string>
+	<key>PayloadDisplayName</key>
+	<string>Mad Monkey Kuta Lombok Wi-Fi</string>
+	<key>PayloadIdentifier</key>
+	<string>com.madmonkey.wifi.kutalombok.profile</string>
+	<key>PayloadOrganization</key>
+	<string>Mad Monkey Hostels</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>j5i6h7g8-f9e0-1234-fedc-ba4321098765</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
