@@ -24,13 +24,13 @@
 			<key>PayloadType</key>
 			<string>com.apple.wifi.managed</string>
 			<key>PayloadUUID</key>
-			<string>c9d0e1f2-a3b4-5678-cdef-789012345678</string>
+			<string>c9d0e1f2-a3b4-5678-cdef-789012345679</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>ProxyType</key>
 			<string>None</string>
 			<key>SSID_STR</key>
-			<string>MAD MONKEY SIARGAO</string>
+			<string>Mad Monkey Siargao</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
@@ -46,7 +46,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>n9m0l1k2-j3i4-5678-fedc-ba8765432109</string>
+	<string>n9m0l1k2-j3i4-5678-fedc-ba8765432110</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
