@@ -134,7 +134,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             </div>
 
             <a
-              href={`https://madmonkeyhostels.com/bookings${utmSuffix}`}
+              href="https://madmonkeyhostels.com/"
               className="block w-full py-6 bg-white text-black font-medium text-2xl tracking-widest text-center shadow-[6px_6px_0px_0px_rgba(255,20,147,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase"
             >
               BOOK MY BED
