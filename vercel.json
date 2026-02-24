@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/((?!mother-assets/).*)", "destination": "/index.html" }
+  ]
+}
