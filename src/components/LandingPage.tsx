@@ -80,16 +80,11 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
 
         {/* B. THE UTILITY STACK */}
         <section className="flex flex-col gap-4">
-          {property.wifi ? (
+          {property.wifi && (
             <button onClick={handleWifiClick} className="w-full py-5 px-8 bg-white border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
               <span>Connect to WiFi</span>
               <div className="w-3 h-3 rounded-full bg-green-500 border-2 border-black animate-pulse"></div>
             </button>
-          ) : (
-            <a href="#" className="w-full py-5 px-8 bg-white border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
-              <span>Connect to WiFi</span>
-              <div className="w-3 h-3 rounded-full bg-green-500 border-2 border-black animate-pulse"></div>
-            </a>
           )}
           {property.checkinUrl && (
           <a href={property.checkinUrl} target="_blank" rel="noopener noreferrer" className="w-full py-5 px-8 bg-yellow-400 border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
