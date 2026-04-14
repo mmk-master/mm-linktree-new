@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import WifiModal from '@/components/WifiModal';
 import madMonkeyLogo from '@/assets/mad-monkey-logo.png';
+import nomadtableLogo from '@/assets/nomadtable-logo.png';
 import { Property } from '@/lib/types';
 import { THEMES } from '@/lib/constants';
 
