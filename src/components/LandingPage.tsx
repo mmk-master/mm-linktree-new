@@ -115,7 +115,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
               <span>Join Nomad Table</span>
               <span className="text-xs normal-case tracking-normal opacity-90">1 Month Premium Free — Code: MADMONKEY26</span>
             </div>
-            <img src={nomadtableLogo} alt="Nomad Table" className="w-8 h-8 rounded-md flex-shrink-0" loading="lazy" width={32} height={32} />
+            <img src={nomadtableLogo} alt="Nomad Table" className="w-6 h-6 rounded flex-shrink-0" loading="lazy" width={24} height={24} />
           </a>
         </section>
 
