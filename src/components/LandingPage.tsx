@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import WifiModal from '@/components/WifiModal';
 import madMonkeyLogo from '@/assets/mad-monkey-logo.png';
+import nomadtableLogo from '@/assets/nomadtable-logo.png';
 import { Property } from '@/lib/types';
 import { THEMES } from '@/lib/constants';
 
@@ -108,6 +109,13 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
           <a href="https://madmonkey.celitech.com/" className="w-full py-5 px-8 bg-blue-500 border-4 border-black flex items-center justify-between font-medium text-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
             <span>Mad Monkey eSIM</span>
             <span className="text-xl">📱</span>
+          </a>
+          <a href="https://nomadtable.app/" target="_blank" rel="noopener noreferrer" className="w-full py-5 px-8 border-4 border-black flex items-center justify-between font-medium text-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg" style={{ backgroundColor: '#FA526F' }}>
+            <div className="flex flex-col">
+              <span>Join Nomad Table</span>
+              <span className="text-xs normal-case tracking-normal opacity-90">1 Month Premium Free — Code: MADMONKEY26</span>
+            </div>
+            <img src={nomadtableLogo} alt="Nomad Table" className="w-8 h-8 rounded-md flex-shrink-0" loading="lazy" width={32} height={32} />
           </a>
         </section>
 
